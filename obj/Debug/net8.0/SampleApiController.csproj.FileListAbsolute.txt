@@ -156,3 +156,12 @@ D:\Code\SampleApiController\obj\Debug\net8.0\refint\SampleApiController.dll
 D:\Code\SampleApiController\obj\Debug\net8.0\SampleApiController.pdb
 D:\Code\SampleApiController\obj\Debug\net8.0\SampleApiController.genruntimeconfig.cache
 D:\Code\SampleApiController\obj\Debug\net8.0\ref\SampleApiController.dll
+D:\Code\SampleApiController\obj\Debug\net8.0\SampleApiController.sourcelink.json
+D:\Code\SampleApiController\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Code\SampleApiController\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Code\SampleApiController\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Code\SampleApiController\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Code\SampleApiController\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Code\SampleApiController\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Code\SampleApiController\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Code\SampleApiController\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
