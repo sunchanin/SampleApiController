@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "x+e/CoDYPZGlQh6cBoS9x124yX9+kpM9laDSO32lF2w=",
+  "Hash": "P4AEXn3i/hdoC5h4LrhvGsrpHUcmEfhfH3q8aUZgTzw=",
   "Source": "SampleApiController",
   "BasePath": "_content/SampleApiController",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
