@@ -17,6 +17,7 @@ public class TokenService(IConfiguration config) : ITokenService
         if (tokenkey.Length < 64) throw new Exception("Your token key must be at least 64 characters");
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenkey));
 
+        // Payload
         var claims = new List<Claim>
         {
             new Claim(ClaimTypes.NameIdentifier, user.Username)
