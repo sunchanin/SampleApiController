@@ -168,3 +168,4 @@ D:\Code\SampleApiController\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.O
 D:\Code\SampleApiController\bin\Debug\net8.0\SampleApiController.staticwebassets.endpoints.json
 D:\Code\SampleApiController\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 D:\Code\SampleApiController\obj\Debug\net8.0\staticwebassets\msbuild.SampleApiController.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Code\SampleApiController\bin\Debug\net8.0\AutoMapper.dll

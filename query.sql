@@ -1,1 +1,1 @@
-INSERT INTO Photos(Url,IsMain,PublicId, UserId, AppUserId) VALUES ('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/640px-Cat03.jpg', false, 1, 8, 8);
+INSERT INTO Photos(Url,IsMain,PublicId, UserId, AppUserId) VALUES ('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/640px-Cat03.jpg', true, 2, 9, 9);

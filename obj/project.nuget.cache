@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "4peq6hZtmk4=",
+  "dgSpecHash": "om1ENHQd/4c=",
   "success": true,
   "projectFilePath": "D:\\Code\\SampleApiController\\SampleApiController.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Chanin.kre\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Chanin.kre\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Chanin.kre\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.11\\microsoft.aspnetcore.authentication.jwtbearer.8.0.11.nupkg.sha512",
     "C:\\Users\\Chanin.kre\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
