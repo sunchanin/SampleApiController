@@ -1,6 +1,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using SampleApiController.Data;
+using SampleApiController.Helpers;
 using SampleApiController.Interfaces;
 using SampleApiController.Services;
 
@@ -21,6 +22,7 @@ public static class ApplicationService
         services.AddScoped<ITokenService, TokenService>();
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+        services.Configure<CloudinarySettings>(config.GetSection("CloudinarySettings"));
 
         return services;
     }

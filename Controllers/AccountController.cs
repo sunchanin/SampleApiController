@@ -1,4 +1,3 @@
-using System;
 using System.Security.Cryptography;
 using System.Text;
 using Microsoft.AspNetCore.Mvc;
@@ -7,7 +6,6 @@ using SampleApiController.Data;
 using SampleApiController.DTOs;
 using SampleApiController.Entities;
 using SampleApiController.Interfaces;
-using SampleApiController.Services;
 
 namespace SampleApiController.Controllers;
 
@@ -15,10 +13,10 @@ namespace SampleApiController.Controllers;
 public class AccountController(DataContext context, ITokenService tokenService) : BaseApiController
 {
     [HttpPost("register")] // account/register
-    
+
     public async Task<ActionResult<AppUser>> Register([FromBody] RegisterDto registerDto)
     {
-        if(await UserExists(registerDto.Username))
+        if (await UserExists(registerDto.Username))
         {
             return BadRequest("Username already exists");
 
@@ -40,10 +38,10 @@ public class AccountController(DataContext context, ITokenService tokenService) 
     }
 
     [HttpPost("login")] // account/login
-    public async Task<ActionResult<UserDto>> Login (LoginDto loginDto)
+    public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
     {
         var user = await context.Users.FirstOrDefaultAsync(user => user.Username == loginDto.Username.ToLower());
-        if(user == null)
+        if (user == null)
         {
             return Unauthorized("Invalid username or password");
         }
@@ -51,19 +49,22 @@ public class AccountController(DataContext context, ITokenService tokenService) 
         using var hmac = new HMACSHA512(user.PasswordSalt);
         var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(loginDto.Password));
 
-        for (int i = 0; i < computedHash.Length; i ++)
+        for (int i = 0; i < computedHash.Length; i++)
         {
-            if(computedHash[i] != user.PasswordHash[i])
+            if (computedHash[i] != user.PasswordHash[i])
             {
                 return Unauthorized("Invalid username or password");
             }
         }
 
-        return Ok(new UserDto {
+        return Ok(new UserDto
+        {
             Username = user.Username,
             Token = tokenService.CreateToken(user)
         });
     }
+
+    [HttpPut]
 
     private async Task<bool> UserExists(string username)
     {
