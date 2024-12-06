@@ -169,3 +169,5 @@ D:\Code\SampleApiController\bin\Debug\net8.0\SampleApiController.staticwebassets
 D:\Code\SampleApiController\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 D:\Code\SampleApiController\obj\Debug\net8.0\staticwebassets\msbuild.SampleApiController.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 D:\Code\SampleApiController\bin\Debug\net8.0\AutoMapper.dll
+D:\Code\SampleApiController\bin\Debug\net8.0\CloudinaryDotNet.dll
+D:\Code\SampleApiController\bin\Debug\net8.0\Newtonsoft.Json.dll

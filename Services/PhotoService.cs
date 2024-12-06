@@ -27,7 +27,7 @@ public class PhotoService : IPhotoService
             var uploadParams = new ImageUploadParams
             {
                 File = new FileDescription(file.FileName, stream),
-                Transformation = new Transformation().Height(500).Width(500).Gravity("face"),
+                Transformation = new Transformation().Height(500).Width(500).Gravity("face").Crop("fill"),
                 Folder = "da-net9"
             };
             uploadResult = await _cloudinary.UploadAsync(uploadParams);
